@@ -11,9 +11,10 @@ public class Test {
         list.add("c");
         list.add("d");
 
-        list.remove(-1);
+        list.remove(1);
         list.remove(2);
         list.remove(0);
+        list.changenumber1();
     }
 
     private static void check(boolean condition, String message) {
@@ -84,7 +85,11 @@ public class Test {
         public int size() {
             return array.length;
         }
+        public void changenumber1(){
+            System.out.println("YOU WIN!");
+        }
     }
+
 }
 //for (int i = 0; i <= counterIndex; i++) {
 //if (array[index].equals(array[i])) {
